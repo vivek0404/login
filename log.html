@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .reg{
+            text-align: center;
+        }
+        .form-control{
+            margin: 10px;
+        }
+        .btn-primary{
+            margin:10px;
+        }
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="reg">Register</h1>
+                <div class="row">
+                    <form action="/api/v1/person/log" method="post">
+                        <div class="col-md-6">
+                            <input type="text" name="email" class="form-control" id="email" required placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="password" class="form-control" id="password" required placeholder="Password">
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>
