@@ -9,7 +9,7 @@ app.use(bodyparser.urlencoded({extended:false}));
 app.use(morgan('tiny'));
 const port = process.env.PORT || 4000;
 
-mongoose.connect("mongodb+srv://vivek:vivek0404@cluster0.swrbp.mongodb.net/person").then(()=>{
+mongoose.connect("mongodb+srv://vivek:admin@cluster0.swrbp.mongodb.net/person").then(()=>{
     console.log("mongodb connected");
 }).catch((err)=>{
     console.log(err);
